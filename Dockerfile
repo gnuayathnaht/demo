@@ -14,7 +14,7 @@ COPY . /app
 RUN ./mvnw clean package
 
 # Copy the generated JAR file (from the target directory)
-COPY target/your-app-name.jar /app/your-app-name.jar
+COPY target/demo-0.0.1-SNAPSHOT.jar /app/demo-0.0.1-SNAPSHOT.jar
 
 # Expose the port your Spring Boot app will run on
 EXPOSE 8080
