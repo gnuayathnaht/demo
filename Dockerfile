@@ -1,9 +1,6 @@
 # Start with a base image with JDK
 FROM openjdk:17-jdk-alpine
 
-# Set the working directory inside the container
-VOLUME /tmp
-
 # Copy the entire Spring Boot project into the container
 COPY target/demo-0.0.1-SNAPSHOT.jar app.jar
 
