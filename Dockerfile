@@ -7,9 +7,6 @@ WORKDIR /app
 # Copy the entire Spring Boot project into the container
 COPY . /app
 
-# Build the project (this assumes you're using Maven Wrapper)
-RUN ./mvnw clean package
-
 # Expose the port your Spring Boot app will run on
 EXPOSE 8080
 
